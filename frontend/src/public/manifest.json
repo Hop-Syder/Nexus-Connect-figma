@@ -1,0 +1,105 @@
+{
+  "name": "Nexus Connect - Réseau d'Entrepreneurs d'Afrique de l'Ouest",
+  "short_name": "Nexus Connect",
+  "description": "La première vitrine numérique qui connecte les talents, artisans et startups d'Afrique de l'Ouest",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#004AAD",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "social"],
+  "lang": "fr",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/screenshot-home.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Page d'accueil Nexus Connect"
+    },
+    {
+      "src": "/screenshot-annuaire.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "platform": "narrow",
+      "label": "Annuaire des entrepreneurs"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Annuaire",
+      "short_name": "Annuaire",
+      "description": "Découvrir les entrepreneurs",
+      "url": "/#annuaire",
+      "icons": [{ "src": "/icon-annuaire.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Nos services",
+      "url": "/#services",
+      "icons": [{ "src": "/icon-services.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Marketplace",
+      "short_name": "Marketplace",
+      "description": "Place de marché",
+      "url": "/#marketplace",
+      "icons": [{ "src": "/icon-marketplace.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

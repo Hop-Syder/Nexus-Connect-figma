@@ -1,0 +1,26 @@
+# robots.txt pour Nexus Connect
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nexusconnect.africa/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
+
+# Disallow admin or private sections (add as needed)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow important pages
+Allow: /#home
+Allow: /#services
+Allow: /#annuaire
+Allow: /#marketplace
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
