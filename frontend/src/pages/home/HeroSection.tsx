@@ -35,8 +35,9 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
   );
 
   const backgroundImage =
-    heroImage ||
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600";
+    heroImage && heroImage.trim().length > 0
+      ? heroImage
+      : "/image/acceuil-nexusconnect-2.jpg";
 
   return (
     <section
@@ -50,7 +51,8 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
           src={backgroundImage}
           className="h-full w-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#051848]/95 via-[#051848]/90 to-[#020716]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#021840]/95 via-[#03245c]/90 to-[#010b1e]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-[#041c46]/50 to-[#041c46]/40" />
       </div>
 
       <motion.div
@@ -60,7 +62,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
         {/* Left Column */}
         <div className="w-full md:w-3/5">
           <motion.div
-            className="mb-6 inline-flex items-center gap-2 rounded-md border-0 bg-[#ffd700]/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#ffd700]"
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#e7b100]/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#ffd700]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -69,7 +71,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
           </motion.div>
 
           <motion.h1
-            className="text-4xl font-bold leading-tight md:text-5xl"
+            className="text-4xl font-extrabold leading-tight md:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -93,11 +95,11 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <button className="button-shimmer group flex items-center gap-2 rounded-full bg-[#ffd700] px-8 py-4 text-base font-semibold text-[#041640] shadow-lg transition duration-300 hover:-translate-y-1">
+            <button className="button-shimmer group flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ffd700] to-[#ffea7a] px-8 py-4 text-base font-semibold text-[#041640] shadow-lg transition duration-300 hover:-translate-y-1">
               Je rejoins le mouvement
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            <button className="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 bg-white/10 px-8 py-4 text-base font-medium text-white transition-colors hover:bg-white/20">
+            <button className="inline-flex items-center justify-center gap-2 rounded-full border border-white/50 bg-white/5 px-8 py-4 text-base font-medium text-white transition-all hover:bg-white/15">
               Découvrir les entrepreneurs
             </button>
           </motion.div>
@@ -126,14 +128,14 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
         >
-          <div className="relative rounded-[48px] border border-white/20 bg-white/10 p-6 backdrop-blur-xl">
+          <div className="relative rounded-[48px] border border-white/20 bg-gradient-to-br from-white/15 via-white/10 to-[#0b204c]/40 p-6 backdrop-blur-xl">
             <div className="relative h-72 overflow-hidden rounded-[36px]">
               <ImageWithFallback
                 alt="Écosystème Nexus Connect soutenu par ses partenaires"
-                src={heroImage || "/image/acceuil-nexusconnect-1.jpg"}
+                src="/image/acceuil-nexusconnect-1.jpg"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#041640]/40 via-transparent to-[#ffd700]/20" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#041640]/50 via-transparent to-[#ffd700]/30" />
               {particles.map((particle, index) => (
                 <span
                   key={index}
@@ -149,14 +151,14 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
             </div>
 
             <div className="mt-6 space-y-4 rounded-3xl bg-white/10 p-5">
-              <p className="text-sm font-semibold uppercase tracking-wide text-[#ffd700]/90">
+              <p className="text-sm font-semibold uppercase tracking-wide text-[#ffd700]">
                 Nos partenaires croient en nous
               </p>
               <div className="flex items-center gap-4">
-                <img
+                <ImageWithFallback
                   alt="Logo Nexus Connect"
                   src="/logo/logo.png"
-                  className="h-10 w-auto"
+                  className="h-12 w-auto"
                 />
                 <p className="text-sm text-white/80">
                   Une plateforme soutenue par les institutions béninoises et les
