@@ -26,8 +26,8 @@ export function HomePage() {
     const loadImages = async () => {
       // Ces images seront chargées via Unsplash ou depuis vos assets
       setImages({
-        hero: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200',
-        vision: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800',
+        hero: '/image/acceuil-nexusconnect-1.jpg',
+        vision: 'https://images.unsplash.com/photo-1557804506-6a69a67965ba0?w=800',
         map: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000',
         testimonials: [
           'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200',
