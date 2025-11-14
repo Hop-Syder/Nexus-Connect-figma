@@ -48,7 +48,7 @@ export function HeroSection() {
                         <Sparkles className="h-4 w-4" />
                         Vision 2030 Nexus Connect
                     </div>
-                    <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl">
+                    <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl" style="font-size: 2.5rem;">
                         Et si l’Afrique de l’Ouest devenait le nouveau centre de l’innovation ?
                     </h1>
                     <p className="max-w-xl text-lg text-white/80">
