@@ -1,5 +1,5 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Button } from './ui/button';
+import { ImageWithFallback } from '../../components/figma/ImageWithFallback';
+import { Button } from '../../components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useMemo, useRef } from 'react';
