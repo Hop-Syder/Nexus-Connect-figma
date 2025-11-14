@@ -42,10 +42,8 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
   return (
     <motion.section
       ref={ref}
-      className="relative overflow-hidden text-white"
-      style={{
-        backgroundColor: "#0D1F44",
-      }}
+      className="relative flex min-h-screen items-center overflow-hidden text-white"
+      style={{ backgroundColor: "#0D1F44" }}
     >
       <img
         src={backgroundImage}
@@ -56,7 +54,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
       <div className="absolute inset-0 bg-gradient-to-br from-[#0d1f44]/90 via-[#0b204c]/80 to-[#040b1e]/90" />
 
       <motion.div
-        className="relative mx-auto flex max-w-6xl flex-col gap-14 px-6 py-24 md:flex-row md:items-center"
+        className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 py-28 md:flex-row md:items-center lg:gap-20"
         style={{ opacity, scale }}
       >
         <div className="w-full space-y-8 md:w-3/5">
@@ -79,11 +77,11 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
             </div>
           </div>
 
-          <h1 className="text-4xl font-extrabold leading-tight text-white md:text-6xl">
+          <h1 className="text-4xl font-extrabold leading-tight text-white md:text-[3.5rem] md:leading-[1.1]">
             Et si l’Afrique de l’Ouest devenait le nouveau centre de l’innovation ?
           </h1>
 
-          <p className="max-w-xl text-lg leading-relaxed text-[#DDE7F2]">
+          <p className="max-w-2xl text-lg leading-relaxed text-[#DDE7F2]">
             Nous connectons les entrepreneurs, startups et institutions pour bâtir une Afrique numérique, unie et visionnaire.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -99,7 +97,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
             </Button>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-3">
             {HERO_STATS.map((stat, index) => (
               <div
                 key={stat.label}
@@ -114,7 +112,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
         </div>
 
         <div className="relative w-full md:w-2/5">
-          <div className="relative rounded-[40px] border border-white/15 bg-white/5 p-6 backdrop-blur-xl">
+          <div className="relative rounded-[40px] border border-white/15 bg-white/5 p-6 backdrop-blur-xl shadow-[0_25px_80px_rgba(3,12,32,0.55)]">
             <div className="relative h-72 overflow-hidden rounded-[30px] border border-white/10">
               <ImageWithFallback
                 src="/image/acceuil-nexusconnect-1.jpg"
