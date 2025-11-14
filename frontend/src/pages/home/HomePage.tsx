@@ -41,13 +41,13 @@ export function HomePage() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Nexus Connect - Connectons les Entrepreneurs d'Afrique de l'Ouest"
         description="La première vitrine numérique qui connecte les talents, artisans et startups d'Afrique de l'Ouest. Rejoignez 500+ entrepreneurs à travers 8 pays. Innovation, collaboration, croissance."
         keywords="entrepreneurs afrique ouest, réseau professionnel afrique, startup afrique, business afrique, nexus connect, networking, innovation afrique, communauté entrepreneurs"
         url="/"
       />
-      
+
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
