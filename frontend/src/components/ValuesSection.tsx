@@ -58,18 +58,18 @@ export function ValuesSection() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="mb-4 rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#b7c6e5]">
+          <div className="mb-5 rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#d5def2]">
             ADN NEXUS
           </div>
-          <h2 className="text-3xl font-semibold leading-tight md:text-4xl">
+          <h2 className="text-3xl font-semibold leading-tight text-white md:text-4xl">
             Des fondamentaux qui unissent vision et action
           </h2>
-          <p className="mt-4 max-w-3xl text-base text-[#d7e3f9] md:text-lg">
+          <p className="mt-6 max-w-3xl text-base text-[#e3ecff] md:text-lg lg:text-xl">
             Chaque valeur est un engagement concret envers les talents, les institutions et les communautés que nous accompagnons.
           </p>
         </motion.div>
 
-        <div className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 scrollbar-thin scrollbar-thumb-white/20 lg:mt-16 lg:flex-nowrap">
+        <div className="mt-16 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 scrollbar-thin scrollbar-thumb-white/20 lg:mt-20 lg:flex-nowrap">
           {values.map((value, index) => {
             const Icon = value.icon;
             return (
@@ -82,7 +82,7 @@ export function ValuesSection() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
                     #{index + 1}
                   </span>
                   <span
@@ -101,7 +101,7 @@ export function ValuesSection() {
                   </div>
                   <h3 className="text-xl font-semibold text-white">{value.title}</h3>
                 </div>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-[#d7e3f9]">{value.description}</p>
+                <p className="mt-5 flex-1 text-sm leading-relaxed text-[#f0f4ff]">{value.description}</p>
                 <div className="mt-6 h-[3px] rounded-full opacity-60" style={{ backgroundColor: value.accent }} />
 
                 <motion.div
