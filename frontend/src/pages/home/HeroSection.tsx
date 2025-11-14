@@ -31,19 +31,20 @@ export function HeroSection() {
         <section
             ref={ref}
             id="accueil"
-            className="relative overflow-hidden bg-gradient-to-br from-[#03133c] via-[#03133c]/95 to-[#010a1c] text-white"
+            className="relative min-h-[90vh] overflow-hidden bg-gradient-to-br from-[#03133c] via-[#03133c]/95 to-[#010a1c] text-white"
         >
             <div className="absolute inset-0">
                 <img
                     src="/image/acceuil-nexusconnect-2.jpg"
                     alt="Carte stylisée de l'Afrique connectée"
-                    className="h-full w-full object-cover opacity-30"
+                    className="h-full w-full object-cover opacity-20"
                     loading="lazy"
                 />
             </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#010a1c]/80 via-[#021b3a]/70 to-transparent" />
 
             <motion.div className="relative mx-auto flex max-w-6xl flex-col gap-14 px-6 py-24 md:flex-row md:items-center" style={{ opacity, scale }}>
-                <div className="w-full space-y-6 md:w-3/5 flex flex-col items-center md:items-start text-center md:text-left">
+                <div className="flex w-full flex-col items-center text-center md:w-3/5 md:items-start md:text-left space-y-6">
                     <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#ffd700]/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#ffd700]">
                         <Sparkles className="h-4 w-4" />
                         Vision 2030 Nexus Connect
@@ -74,7 +75,7 @@ export function HeroSection() {
                 </div>
 
                 <div className="relative w-full md:w-2/5">
-                    <div className="relative rounded-[48px] border border-white/20 bg-white/10 p-6 backdrop-blur-xl">
+                    <div className="relative rounded-[40px] border border-white/20 bg-white/5 p-5 backdrop-blur-xl scale-90 md:scale-95">
                         <div className="relative h-72 overflow-hidden rounded-[36px]">
                             <ImageWithFallback
                                 src="/image/acceuil-nexusconnect-1.jpg"
