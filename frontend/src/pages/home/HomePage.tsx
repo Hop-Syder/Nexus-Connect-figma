@@ -11,14 +11,15 @@ import { CTASection } from './CTASection';
 import { SEO } from '../../components/SEO';
 import { motion } from 'motion/react';
 
+// Images optimisées sans paramètres CORS problématiques
 const STATIC_IMAGES = {
   hero: '/image/acceuil-nexusconnect-1.jpg',
-  vision: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800',
-  map: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000',
+  vision: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
+  map: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
   testimonials: [
-    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200',
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200',
-    'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200',
+    'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg',
+    'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
+    'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
   ],
 };
 
