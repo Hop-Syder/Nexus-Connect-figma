@@ -54,30 +54,16 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
       <div className="absolute inset-0 bg-gradient-to-br from-[#0d1f44]/90 via-[#0b204c]/80 to-[#040b1e]/90" />
 
       <motion.div
-        className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 py-28 md:flex-row md:items-center lg:gap-20"
+        className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 px-8 py-32 md:flex-row md:items-center lg:gap-24"
         style={{ opacity, scale }}
       >
-        <div className="w-full space-y-8 md:w-3/5">
-          <div className="flex flex-wrap items-center gap-4">
-            <div className="flex items-center gap-3 text-white/80">
-              <div className="h-10 w-10 rounded-full bg-white/10 p-2 backdrop-blur">
-                <ImageWithFallback
-                  src="/logo/logo.png"
-                  alt="Logo Nexus Connect"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#DDE7F2]">
-                Nexus Connect
-              </p>
-            </div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#ffd700]/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#ffd700]">
-              <Target className="h-4 w-4" />
-              Vision 2030
-            </div>
+        <div className="w-full space-y-8 md:w-7/12">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-[#ffd700]/15 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd700]">
+            <Target className="h-4 w-4" />
+            Vision 2030
           </div>
 
-          <h1 className="text-4xl font-extrabold leading-tight text-white md:text-[3.5rem] md:leading-[1.1]">
+          <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white md:text-[3.5rem] md:leading-[1.1]">
             Et si l’Afrique de l’Ouest devenait le nouveau centre de l’innovation ?
           </h1>
 
@@ -111,9 +97,9 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
           </div>
         </div>
 
-        <div className="relative w-full md:w-2/5">
+        <div className="relative w-full md:w-5/12">
           <div className="relative rounded-[40px] border border-white/15 bg-white/5 p-6 backdrop-blur-xl shadow-[0_25px_80px_rgba(3,12,32,0.55)]">
-            <div className="relative h-72 overflow-hidden rounded-[30px] border border-white/10">
+            <div className="relative h-[320px] overflow-hidden rounded-[30px] border border-white/10">
               <ImageWithFallback
                 src="/image/acceuil-nexusconnect-1.jpg"
                 alt="Ecosystème Nexus Connect"
