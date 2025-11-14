@@ -43,12 +43,12 @@ export function HeroSection() {
             </div>
 
             <motion.div className="relative mx-auto flex max-w-6xl flex-col gap-14 px-6 py-24 md:flex-row md:items-center" style={{ opacity, scale }}>
-                <div className="w-full space-y-6 md:w-3/5">
+                <div className="w-full space-y-6 md:w-3/5 flex flex-col items-center md:items-start text-center md:text-left">
                     <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#ffd700]/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#ffd700]">
                         <Sparkles className="h-4 w-4" />
                         Vision 2030 Nexus Connect
                     </div>
-                    <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl" style="font-size: 2.5rem;">
+                    <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl">
                         Et si l’Afrique de l’Ouest devenait le nouveau centre de l’innovation ?
                     </h1>
                     <p className="max-w-xl text-lg text-white/80">
