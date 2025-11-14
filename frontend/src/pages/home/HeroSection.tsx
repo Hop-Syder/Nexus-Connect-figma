@@ -9,6 +9,10 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ heroImage }: HeroSectionProps) {
+  const displayImage =
+    heroImage && heroImage.trim().length > 0
+      ? heroImage
+      : "/image/acceuil-nexusconnect-1.jpg";
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -209,7 +213,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
                 transition={{ duration: 0.3 }}
               >
                 <ImageWithFallback
-                  src={heroImage}
+                  src={displayImage}
                   alt="Entrepreneurs africains modernes"
                   className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
                   style={{ transform: "translateZ(40px)" }}
