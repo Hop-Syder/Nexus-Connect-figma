@@ -20,15 +20,15 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
   const rotateY = useTransform(scrollYProgress, [0, 0.5, 1], [-10, 0, 10]);
 
   const stats = [
-    { number: '100 000', label: 'Acteurs économiques ouest-africains d\'ici 2027' },
+    { number: '4 500', label: 'Profils artisanaux et startups en cours d\'onboarding' },
     { number: '72%', label: 'Entrepreneurs sans présence numérique auparavant' },
-    { number: '8 pays', label: 'Présence active en Afrique de l\'Ouest' },
+    { number: '30', label: 'Partenariats locaux activés avec mairies et incubateurs' },
   ];
 
   const benefits = [
-    'Présence digitale instantanée, même pour les entrepreneurs hors ligne',
-    'Référencement géolocalisé adapté au contexte ouest-africain',
-    'Passerelles IA pour décrire, recommander et mesurer chaque interaction',
+    'Présence digitale instantanée, même pour les entrepreneurs hors ligne.',
+    'Référencement géolocalisé et recherche multicritères adaptés au contexte local.',
+    'Passerelles IA pour décrire, recommander et mesurer chaque interaction.',
   ];
 
   return (
@@ -102,11 +102,8 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
               whileHover={{ scale: 1.05, x: 5 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
-              <span className="text-[#FFD700] text-sm md:text-base" style={{ fontWeight: 700 }}>
-                🌍 VISION NEXUS
-              </span>
-              <span className="text-[#004AAD] text-xs md:text-sm" style={{ fontWeight: 600 }}>
-                • Pont numérique d'Afrique de l'Ouest
+              <span className="text-[#FFD700] text-sm md:text-base font-semibold">
+                🌍 Pont Nexus Connect
               </span>
             </motion.div>
 
@@ -123,7 +120,7 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Offrir à chaque talent ouest-africain une vitrine numérique fiable et connectée
+              Offrir à chaque talent béninois et africain une vitrine numérique fiable et connectée.
             </motion.h2>
 
             {/* Description */}
@@ -135,10 +132,7 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              Nexus Connect met en lumière les entrepreneurs, artisans et startups d'Afrique de l'Ouest. 
-              <strong className="text-[#004AAD]"> Partie du Bénin</strong>, notre plateforme facilite la découverte, 
-              la collaboration et l'accès à des opportunités <strong className="text-[#FFD700]">régionales</strong> sans 
-              expertise technique préalable.
+              Nexus Connect met en lumière les entrepreneurs, artisans et startups d'Afrique de l'Ouest. Notre plateforme facilite la découverte, la collaboration et l'accès à des opportunités régionales sans expertise technique préalable.
             </motion.p>
 
             {/* Benefits List */}
@@ -183,15 +177,15 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
                   Découvrir les solutions Nexus
                 </Button>
               </motion.a>
-              
+
               <motion.a
                 href="#accueil"
                 className="w-full sm:w-auto"
                 whileHover={{ scale: 1.05, y: -3 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="w-full border-2 border-[#004AAD] text-[#004AAD] hover:bg-[#004AAD]/5 rounded-xl px-6 py-3 md:px-8 md:py-6 text-sm md:text-base"
                   style={{ fontWeight: 600 }}
                 >
@@ -239,9 +233,7 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
                       🌉 Pont Nexus Connect
                     </motion.p>
                     <p className="text-[#333]/80 text-sm md:text-base lg:text-lg" style={{ lineHeight: '1.6' }}>
-                      Notre ambition : cartographier et propulser <strong className="text-[#004AAD]">100 000 acteurs 
-                      économiques ouest-africains</strong> d'ici 2027 en reliant collectivités, entreprises, 
-                      institutions et investisseurs.
+                      Notre ambition : cartographier et propulser <strong className="text-[#004AAD]">100 000 acteurs économiques ouest-africains</strong> d'ici 2027 en reliant collectivités, entreprises, institutions et investisseurs.
                     </p>
                   </div>
 
@@ -296,11 +288,10 @@ export function VisionMissionSection({ image }: VisionMissionSectionProps) {
                       className="italic leading-relaxed mb-4 text-sm md:text-base lg:text-lg"
                       style={{ lineHeight: '1.6' }}
                     >
-                      "Nexus Connect ouvre le marché ouest-africain à de nouvelles collaborations en valorisant 
-                      nos savoir-faire depuis le Bénin jusqu'au Sénégal, du Ghana au Mali."
+                      “Nexus Connect ouvre le marché béninois à de nouvelles collaborations en valorisant nos savoir-faire.”
                     </p>
                     <footer className="text-[#FFD700] text-xs md:text-sm uppercase tracking-wide" style={{ fontWeight: 700 }}>
-                      — Pont Nexus Connect • Afrique de l'Ouest
+                      Pont Nexus Connect
                     </footer>
                   </motion.blockquote>
                 </div>
