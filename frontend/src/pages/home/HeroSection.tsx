@@ -33,7 +33,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
             className="relative min-h-[80vh] flex items-center overflow-hidden"
             style={{
                 backgroundImage:
-                    "linear-gradient(135deg, rgba(255,215,0,0.9), rgba(255,248,225,0.95)), url('/image/acceuil-nexusconnect-2.jpg')",
+                    "linear-gradient(135deg, rgba(4, 74, 153, 0.66), rgba(255,248,225,0.95)), url('/image/acceuil-nexusconnect-2.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundBlendMode: "multiply",
@@ -108,7 +108,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
                             }}
                             whileHover={{
                                 scale: 1.02,
-                                textShadow: "0 0 8px rgba(0, 74, 173, 0.3)",
+                                textShadow: "0 0 8px rgba(255, 255, 255, 1)",
                             }}
                         >
                             Et si l'Afrique de l'Ouest devenait le nouveau
