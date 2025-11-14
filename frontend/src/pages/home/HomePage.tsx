@@ -10,35 +10,19 @@ import { TestimonialsSection } from './TestimonialsSection';
 import { CTASection } from './CTASection';
 import { SEO } from '../../components/SEO';
 import { motion } from 'motion/react';
-import { useEffect, useState } from 'react';
-import { unsplash_tool } from '../../utils/unsplash';
+
+const STATIC_IMAGES = {
+  hero: '/image/acceuil-nexusconnect-1.jpg',
+  vision: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800',
+  map: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000',
+  testimonials: [
+    'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200',
+    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200',
+    'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200',
+  ],
+};
 
 export function HomePage() {
-  const [images, setImages] = useState({
-    hero: '',
-    vision: '',
-    map: '',
-    testimonials: ['', '', ''],
-  });
-
-  useEffect(() => {
-    // Load images
-    const loadImages = async () => {
-      // Ces images seront chargées via Unsplash ou depuis vos assets
-      setImages({
-        hero: '/image/acceuil-nexusconnect-1.jpg',
-        vision: 'https://images.unsplash.com/photo-1557804506-6a69a67965ba0?w=800',
-        map: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000',
-        testimonials: [
-          'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200',
-          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200',
-          'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200',
-        ],
-      });
-    };
-    loadImages();
-  }, []);
-
   return (
     <>
       <SEO
@@ -53,15 +37,15 @@ export function HomePage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <HeroSection heroImage={images.hero} />
-        <VisionMissionSection image={images.vision} />
+        <HeroSection heroImage={STATIC_IMAGES.hero} />
+        <VisionMissionSection image={STATIC_IMAGES.vision} />
         <ValuesSection />
         <StorySection />
-        <AboutSection mapImage={images.map} />
+        <AboutSection mapImage={STATIC_IMAGES.map} />
         <ServicesSection />
         <TeamSection />
         <RSESection />
-        <TestimonialsSection testimonialImages={images.testimonials} />
+        <TestimonialsSection testimonialImages={STATIC_IMAGES.testimonials} />
         <CTASection />
       </motion.main>
     </>
